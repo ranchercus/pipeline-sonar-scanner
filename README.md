@@ -1,0 +1,1 @@
+docker build -t rancher/pipeline-sonar-scanner:1.0.2 .
