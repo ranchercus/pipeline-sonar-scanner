@@ -53,4 +53,9 @@ sonar_qc () {
     fi
 }
 
-sonar_qc;
+if [ ! -f "package.json" ]; then
+    sonar_qc;
+else
+    s_echo;
+fi
+rm -rf ./sonar-project.properties
